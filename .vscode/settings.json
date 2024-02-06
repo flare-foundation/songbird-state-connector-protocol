@@ -1,0 +1,13 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#5c1657",
+        "titleBar.inactiveBackground": "#90149081",
+        "activityBar.background": "#ad29ad5a",
+        "activityBar.activeBackground": "#761e7650"
+    },
+
+    "cSpell.words": ["pseudocode"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true
+}
