@@ -20,5 +20,4 @@ An address decoded to hex is of the form: `<leadingByte><hash><checkSum>`.
 
 Back: [External chains](/specs/attestations/external-chains.md) |
 [BTC address validity](/specs/attestations/external-chains/address-validity/BTC.md) |
-Next: [XRPL address validity](/specs/attestations/external-chains/address-validity/XRPL.md) |
 [Home](/README.md)

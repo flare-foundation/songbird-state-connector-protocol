@@ -4,7 +4,7 @@
 
 An assertion whether a string represents a valid address on an external chain.
 
-**Supported sources:** BTC, DOGE, XRP, testBTC, testDOGE, testXRP
+**Supported sources:** BTC, DOGE, XRP, (testBTC, testDOGE, testXRP)
 
 ## Request body
 
@@ -27,9 +27,9 @@ Indicator of validity is provided.
 If the address is valid, its standard form and standard hash are computed.
 Validity criteria for each supported chain:
 
-- [BTC](/specs/attestations/external-chains/address-validity/BTC.md)
-- [DOGE](/specs/attestations/external-chains/address-validity/DOGE.md)
-- [XRPL](/specs/attestations/external-chains/address-validity/XRPL.md)
+-   [BTC](/specs/attestations/external-chains/address-validity/BTC.md)
+-   [DOGE](/specs/attestations/external-chains/address-validity/DOGE.md)
+-   [XRPL](/specs/attestations/external-chains/address-validity/XRPL.md)
 
 ## Lowest Used Timestamp
 

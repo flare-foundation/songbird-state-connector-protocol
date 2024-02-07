@@ -7,7 +7,7 @@ Various blockchains support different types of native payments. For each blockch
 transaction should be formed to be provable by this attestation type.
 The provable payments emulate traditional banking payments from entity A to entity B in native currency with an optional payment reference.
 
-**Supported sources:** BTC, DOGE, XRP, testBTC, testDOGE, testXRP
+**Supported sources:** BTC, DOGE, XRP, (testBTC, testDOGE, testXRP)
 
 ## Request body
 

@@ -6,7 +6,7 @@ A detection of a transaction that either decreases the balance for some address 
 Such an attestation could prove a violation of an agreement and therefore provides grounds to liquidate some funds locked by a smart contract on Songbird.
 A transaction is considered “balance decreasing” for the address, if the balance after the transaction is lower than before or the address is among the signers of the transaction (even if its balance is greater than before the transaction).
 
-**Supported sources:** BTC, DOGE, XRP, testBTC, testDOGE, testXRP
+**Supported sources:** BTC, DOGE, XRP, (testBTC, testDOGE, testXRP)
 
 ## Request body
 

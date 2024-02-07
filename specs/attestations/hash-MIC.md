@@ -23,11 +23,12 @@ response.votingRound = 0;
 bytes32 MIC = keccak256(abi.encode(response,"Flare"));
 ```
 
-```
-
 Back: [Attestation Type definition](/specs/attestations/attestation-type-definition.md) |
 [Encoding/decoding](/specs/attestations/encoding-decoding.md) |
 Next: [Verifier Server](/specs/attestations/verifier.md) |
 
 [Home](/README.md)
+
+```
+
 ```

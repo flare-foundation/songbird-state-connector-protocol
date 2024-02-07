@@ -7,7 +7,7 @@ A confirmed request shows that a transaction meeting certain criteria (address, 
 
 This type of attestation can be used to e.g. provide grounds to liquidate funds locked by a smart contract on Songbird when a payment is missed.
 
-**Supported sources:** BTC, DOGE, XRP, testBTC, testDOGE, testXRP
+**Supported sources:** BTC, DOGE, XRP, (testBTC, testDOGE, testXRP)
 
 ## Request body
 

@@ -5,7 +5,7 @@
 An assertion that a block with `blockNumber` is confirmed.
 It also provides data to compute the block production rate in the given time range.
 
-**Supported sources:** BTC, DOGE, XRP, testBTC, testDOGE, testXRP
+**Supported sources:** BTC, DOGE, XRP, (testBTC, testDOGE, testXRP)
 
 ## Request body
 

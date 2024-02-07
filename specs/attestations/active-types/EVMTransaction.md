@@ -5,7 +5,7 @@
 A relay of a transaction from an EVM chain.
 This type is only relevant for EVM-compatible chains.
 
-**Supported sources:** ETH, FLR, SGB, testETH, testFLR, testSGB
+**Supported sources:** ETH, FLR, SGB, (testETH, testFLR, testSGB)
 
 ## Request body
 
