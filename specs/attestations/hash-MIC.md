@@ -28,7 +28,3 @@ Back: [Attestation Type definition](/specs/attestations/attestation-type-definit
 Next: [Verifier Server](/specs/attestations/verifier.md) |
 
 [Home](/README.md)
-
-```
-
-```

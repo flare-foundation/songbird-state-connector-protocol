@@ -15,6 +15,8 @@ The verification contract then follows these steps:
 -   Calculates the [attestation hash](/specs/attestations/hash-MIC.md#attestation-hash) from the response.
 -   Verifies the attestation hash against the Merkle root using the Merkle proof
 
+The implementations of the verification contracts for active attestation types are available on this repository.
+
 Back: [Attestation Type definition](/specs/attestations/attestation-type-definition.md) |
 [Verifier Server](/specs/attestations/verifier.md) |
 Next: [Active Types](/specs/attestations/active-types.md) |
