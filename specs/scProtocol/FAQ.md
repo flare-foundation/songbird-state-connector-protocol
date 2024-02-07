@@ -3,12 +3,12 @@
 ## What is the State Connector protocol?
 
 The State Connector protocol is a request-response-based protocol that supports providing data and facts from external blockchains and other data sources in a trustless and decentralised manner.
-It runs on all Flare Networks (Songbird, Flare, Coston, and Coston2) and is managed by the [State Connector contract](/specs/scProtocol/state-connector-contract.md).
+It runs on all Songbird Network (and Coston) and is managed by the [State Connector contract](/specs/scProtocol/state-connector-contract.md).
 
 ## Why would I need the State Connector protocol?
 
 One example is that you can implement a smart contract on Songbird, which acts upon the proof that someone made a specified payment on the Bitcoin network. For example, someone can pay on the Bitcoin blockchain to buy a NFT on Songbird.
-Once the payment is made, the State Connector protocol can be used to prove the payment to the NFT smart contract on the Flare Network, which would than automatically mint the NFT.
+Once the payment is made, the State Connector protocol can be used to prove the payment to the NFT smart contract on the Songbird Network, which would than automatically mint the NFT.
 
 Another example would be that you require a specific payment in XRPL up to a certain timestamp to release collateral on Songbird.
 The State Connector protocol can be used to prove that the payment was made by the due date and the collateral can be released, or it can be used to prove that the payment was not carried out by the due date and the proof can be used to liquidate the collateral.
@@ -41,7 +41,7 @@ An attestation response is the reply to an attestation request.
 It is obtained in the process of verification of an attestation request.
 The response to a valid attestation request must be uniquely defined.
 How a response is obtained and formatted is unambiguously defined by the[attestation type](/specs/attestations/attestation-type-definition.md) of the request.
-A attestation response that is validated by the State Connector protocol can be safely used on the Flare blockchain.
+A attestation response that is validated by the State Connector protocol can be safely used on the Songbird blockchain.
 
 ## Which kinds of attestation requests can the State Connector system currently process?
 
@@ -133,14 +133,9 @@ The data for assembling the proof can be obtained from the [attestation provider
 This depends on the dApp that uses the State Connector protocol to allow certain actions based on a successful proofs.
 A smart contract that uses attestation proofs should specify which attestation type is required and what data should be provided.
 After the proof is submitted, the contract should use a [verification contract](/specs/attestations/verification-contract.md) for the attestation type to check that the proof is valid and the response can be trusted.
-An implementation of a verification contract can be generated with [Flare Connector Utils](/specs/attestations/cli.md) tool.
 
 ## How can I implement a dApp that uses proofs for a State Connector system?
 
 For easier understanding, see an [example attestation verification workflow](/specs/scProtocol/verification-workflow.md).
-
-## How can I add a new attestation type?\
-
-There is a standardized [process](/specs/attestations/adding-new-attestation-type.md) of adding new attestation types to the protocol.
 
 [Home](/README.md)

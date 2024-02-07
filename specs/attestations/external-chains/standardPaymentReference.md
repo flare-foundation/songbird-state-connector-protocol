@@ -1,6 +1,6 @@
 # Standard payment reference
 
-In Flare, a standard payment reference is defined as a 32-byte sequence that can be added to a payment transaction, in the same way that a payment reference is attached to a traditional banking transaction.
+On Flare and Songbird, a standard payment reference is defined as a 32-byte sequence that can be added to a payment transaction, in the same way that a payment reference is attached to a traditional banking transaction.
 
 Blockchains may enable several ways of attaching data as metadata to a transaction.
 

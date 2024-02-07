@@ -19,7 +19,7 @@ The round is considered unsuccessful if the default set does not agree on a Merk
 Then no Merkle root is stored on the State Connector contract and no forks can happen.
 If the default set accepts a Merkle root with more than 50% of the weight and at least one of the other conditions is not met, the node forks and halts.
 
-You can find these condition checks in the [source code](https://github.com/flare-foundation/go-flare/blob/main/coreth/core/state_connector.go#L226).
+You can find these condition checks in the [source code](https://github.com/flare-foundation/go-songbird/blob/main/avalanchego/coreth/core/state_connector.go).
 
 Ideally, local providers are managed by the same entity that controls the validator node using them, so they can be trusted implicitly.
 In addition, the local set must be robust, as the downtime of enough local providers would inevitably lead to a fork and halt.

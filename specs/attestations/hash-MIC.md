@@ -18,21 +18,11 @@ The Message Integrity Code (MIC) is the hash of the expected attestation respons
 A requester provides the MIC to attestation providers, so they can check the verifier's response against the requester's expectations.
 Hence, the requestor must know the response in advance.
 
-## Calculation
+```solidity
+response.votingRound = 0;
+bytes32 MIC = keccak256(abi.encode(response,"Flare"));
+```
 
-To calculate both the hash and the MIC from an attestation response for a specific attestation type, the [`AttestationDefinitionStore`](../../libs/ts/AttestationDefinitionStore.ts) utility can be used.
-
-Initialize the class with the path to the extended configuration folder and use the `attestationResponseHash(response, salt?)` function.
-For the hash, use an undefined salt, while for the MIC use the salt `"Flare"` and `votingRound` set to `0`.
-
-```Typescript
-import { AttestationDefinitionStore } from "../path/to/AttestationDefinitionStore";
-
-const response = ...
-const defStore = new AttestationDefinitionStore("path/to/extended/configs/folder");
-const hash = defStore.attestationResponseHash(response);
-response.votingRound = 0
-const mic = defStore.attestationResponseHash(response, "Flare");
 ```
 
 Back: [Attestation Type definition](/specs/attestations/attestation-type-definition.md) |
@@ -40,3 +30,4 @@ Back: [Attestation Type definition](/specs/attestations/attestation-type-definit
 Next: [Verifier Server](/specs/attestations/verifier.md) |
 
 [Home](/README.md)
+```

@@ -110,7 +110,8 @@ The proof for a given voting round `roundId` is stored at the index `roundId % T
 
 The currently deployed `StateConnector` contracts on Songbird network is available at the following addresses:
 
--   https://songbird-explorer.flare.network/address/0x0c13aDA1C7143Cf0a0795FFaB93eEBb6FAD6e4e3
+-   [On Songbird](https://songbird-explorer.flare.network/address/0x0c13aDA1C7143Cf0a0795FFaB93eEBb6FAD6e4e3)
+-   [On Coston](https://coston-explorer.flare.network/address/0x0c13aDA1C7143Cf0a0795FFaB93eEBb6FAD6e4e3)
 
 Do not relay on the provided address. Retrieve the address from chain using [FlareContractRegistry](https://docs.flare.network/dev/getting-started/contract-addresses/).
 

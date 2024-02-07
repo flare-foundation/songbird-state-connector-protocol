@@ -10,7 +10,7 @@ Their main roles include:
 -   Assembling the [Merkle tree](merkle-tree.md) according to bit-voted and verified requests.
 -   Carrying out the commit-reveal voting cycle.
 -   Storing the confirmed attestation requests, their responses, and Merkle trees for the rounds with a confirmed Merkle root.
--   Running standardized REST API routes to provide confirmed attestation responses together with Merkle proofs, which can be used on the Flare blockchain.
+-   Running standardized REST API routes to provide confirmed attestation responses together with Merkle proofs, which can be used on the Songbird blockchain.
 
 ## Becoming a default attestation provider
 
@@ -34,7 +34,7 @@ The following routes have to be supported by attestation providers:
     | `response`     | object | Response to the request as specified by the attestation type.                                                                                              |
     | `merkleProof`  | array  | Array of hashes that prove that the request's hash is included in the Merkle tree. It can be an empty array if only one request is confirmed in the round. |
 
-    The data can be used for creating the attestation proofs used on the Flare blockchain.
+    The data can be used for creating the attestation proofs used on the Songbird blockchain.
 
 -   `GET /api/proof/votes-for-round/{roundId}`
 

@@ -14,7 +14,7 @@ The request is considered by [attestation providers](/specs/scProtocol/attestati
 To attest the data, a majority of attestation providers must agree on the response.
 To reach an agreement, the request and the response must be well formatted and deterministically defined (with respect to the data available to each attestation provider).
 The formats are described by [attestation types](/specs/attestations/attestation-type-definition.md).
-A successfully attested response is used to relay data to a smart contract on Flare in a secure and decentralized manner.
+A successfully attested response is used to relay data to a smart contract on Songbird in a secure and decentralized manner.
 
 In order to understand how the attestation protocol works, let's consider a simple scenario.
 A user proposes a fact to be confirmed by the protocol: "a transaction with ID `XYZ` exists on the Bitcoin network".
@@ -88,5 +88,3 @@ For a more detailed workflow, see [here](/specs/scProtocol/verification-workflow
         -   [Verifier server](/specs/attestations/verifier.md)
         -   [Verification contract](/specs/attestations/verification-contract.md)
         -   [Currently supported types](/specs/attestations/active-types.md)
-
--   [SCIP](/specs/SCIP/improvement-proposals.md)

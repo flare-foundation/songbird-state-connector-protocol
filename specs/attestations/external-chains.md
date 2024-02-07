@@ -1,7 +1,7 @@
 # External chains
 
 The State Connector enables the use of data from external blockchains.
-Currently supported blockchains are: Bitcoin, Dogecoin, XRPL, and Ethereum (and their testnets for Flare testnets).
+Currently supported blockchains are: Bitcoin, Dogecoin, XRPL, and Ethereum (and their testnets for Coston testnets).
 Each chain has its own [specifications](/data-sources/data-sources.json).
 
 Each blockchain has its own specifics and nuances; however, there are enough similarities to handle them in a unified way.

@@ -5,7 +5,7 @@
 Assertion that an agreed-upon payment has not been made by a certain deadline.
 A confirmed request shows that a transaction meeting certain criteria (address, amount, reference) did not appear in the specified block range.
 
-This type of attestation can be used to e.g. provide grounds to liquidate funds locked by a smart contract on Flare when a payment is missed.
+This type of attestation can be used to e.g. provide grounds to liquidate funds locked by a smart contract on Songbird when a payment is missed.
 
 **Supported sources:** BTC, DOGE, XRP, testBTC, testDOGE, testXRP
 
@@ -46,9 +46,9 @@ The criteria and timestamp are chain specific.
 
 Criteria for the transaction:
 
-- It is not coinbase transaction.
-- The transaction has the specified [standardPaymentReference](/specs/attestations/external-chains/standardPaymentReference.md#btc-and-doge-blockchains).
-- The sum of values of all outputs with the specified address minus the sum of values of all inputs with the specified address is greater than `amount` (in practice the sum of all values of the inputs with the specified address is zero).
+-   It is not coinbase transaction.
+-   The transaction has the specified [standardPaymentReference](/specs/attestations/external-chains/standardPaymentReference.md#btc-and-doge-blockchains).
+-   The sum of values of all outputs with the specified address minus the sum of values of all inputs with the specified address is greater than `amount` (in practice the sum of all values of the inputs with the specified address is zero).
 
 Timestamp is `mediantime`.
 
@@ -56,11 +56,11 @@ Timestamp is `mediantime`.
 
 Criteria for the transaction:
 
-- The transaction is of type payment.
-- The transaction has the specified [standardPaymentReference](/specs/attestations/external-chains/standardPaymentReference.md#xrp),
-- One of the following is true:
-  - Transaction status is `SUCCESS` and the amount received by the specified destination address is greater than the specified `value`.
-  - Transaction status is `RECEIVER_FAILURE` and the specified destination address would receive an amount greater than the specified `value` had the transaction been successful.
+-   The transaction is of type payment.
+-   The transaction has the specified [standardPaymentReference](/specs/attestations/external-chains/standardPaymentReference.md#xrp),
+-   One of the following is true:
+    -   Transaction status is `SUCCESS` and the amount received by the specified destination address is greater than the specified `value`.
+    -   Transaction status is `RECEIVER_FAILURE` and the specified destination address would receive an amount greater than the specified `value` had the transaction been successful.
 
 Timestamp is `close_time` converted to UNIX time.
 

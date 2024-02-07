@@ -46,9 +46,9 @@ If the chosen subset of 5 proposes to confirm an invalid attestation while bit v
 ## BitVoting contract deployments in the Block Explorer
 
 -   [On Songbird](https://songbird-explorer.flare.network/address/0xd1Fa33f1b591866dEaB5cF25764Ee95F24B1bE64)
--   [On Flare](https://flare-explorer.flare.network/address/0xd1Fa33f1b591866dEaB5cF25764Ee95F24B1bE64)
 -   [On Coston](https://coston-explorer.flare.network/address/0xd1Fa33f1b591866dEaB5cF25764Ee95F24B1bE64)
--   [On Coston2](https://coston2-explorer.flare.network/address/0xd1Fa33f1b591866dEaB5cF25764Ee95F24B1bE64)
+
+Do not relay on the provided address. Retrieve the address from chain using [FlareContractRegistry](https://docs.flare.network/dev/getting-started/contract-addresses/).
 
 Back: [Voting protocol](/specs/scProtocol/voting-protocol.md) | Next: [Merkle tree](/specs/scProtocol/merkle-tree.md) |
 

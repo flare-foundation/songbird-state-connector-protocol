@@ -1,6 +1,6 @@
 # Verification contract
 
-Once an attestation request is confirmed by the State Connector protocol, its response can be used on Flare Network.
+Once an attestation request is confirmed by the State Connector protocol, its response can be used on the Songbird Network.
 To be used, one must verify that the response is among the confirmed attestations in some voting round.
 
 The following information must be provided for verification:
@@ -15,13 +15,8 @@ The verification contract then follows these steps:
 -   Calculates the [attestation hash](/specs/attestations/hash-MIC.md#attestation-hash) from the response.
 -   Verifies the attestation hash against the Merkle root using the Merkle proof
 
-## Reference implementation
-
-A verification contract implementation can be auto-generated using the [CLI tool](/specs/attestations/cli.md#verification-contracts).
-
 Back: [Attestation Type definition](/specs/attestations/attestation-type-definition.md) |
 [Verifier Server](/specs/attestations/verifier.md) |
 Next: [Active Types](/specs/attestations/active-types.md) |
-[Auto-generation](/specs/attestations/cli.md) |
 
 [Home](/README.md)

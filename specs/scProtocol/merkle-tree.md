@@ -45,14 +45,14 @@ This representation of a complete binary tree is well known from classic impleme
 Note that there are several types of Merkle trees, depending on their purpose. In general, a Merkle tree can be used to uniquely produce a representative hash for a _fixed sequence_ of hashes or just for a _set_ of hashes, if the order of appearance is not important.
 
 For example, with Merkle trees for transactions in a block on the Bitcoin network the exact order of the transactions in the block is important, hence a _fixed sequence_ Merkle tree is used.
-On Flare, the order of votes (attestation hashes) is not important so a _set_ Merkle tree is used.
+On Songbird, the order of votes (attestation hashes) is not important so a _set_ Merkle tree is used.
 Namely, each successful vote is identified with a unique attestation hash (duplicates are removed).
 For later verification, one only needs to query whether such a hash has appeared among the hashes in the Merkle tree.
 On the other hand, in the Bitcoin transactions example, one needs to verify that the hash of a transaction is a leaf of the tree at a specific index.
 
 In the case of a set of Merkle trees, additional simplification when performing hashes of pairs can be used.
 Such a simplification makes Merkle proofs shorter and easier to use.
-The hash that Flare uses for pairs is defined as follows:
+The hash that Songbird uses for pairs is defined as follows:
 
 ```text
 shash(data1, data2) = hash(join(sort([data1, data2])))
@@ -112,7 +112,12 @@ Where variables `a1` and `a2` are of type `bytes32`.
 In Java/Typescript, the following code using _web3.js_ produces the same result:
 
 ```javascript
-web3.utils.soliditySha3(web3.eth.abi.encodeParameters(["bytes32", "bytes32"], a1 <= a2 ? [a1, a2] : [a2, a1]));
+web3.utils.soliditySha3(
+    web3.eth.abi.encodeParameters(
+        ["bytes32", "bytes32"],
+        a1 <= a2 ? [a1, a2] : [a2, a1]
+    )
+);
 ```
 
 Where `a1` and `a2` are `0x`-prefixed hex strings representing 32-bytes.
@@ -121,7 +126,9 @@ Or with _ethers.js_:
 
 ```javascript
 const coder = ethers.AbiCoder.defaultAbiCoder();
-ethers.keccak256(coder.encode(["bytes32", "bytes32"], a1 <= a2 ? [a1, a2] : [a2, a1]));
+ethers.keccak256(
+    coder.encode(["bytes32", "bytes32"], a1 <= a2 ? [a1, a2] : [a2, a1])
+);
 ```
 
 Back: [Voting protocol](/specs/scProtocol/voting-protocol.md) | [Bit-voting](/specs/scProtocol/bit-voting.md) |

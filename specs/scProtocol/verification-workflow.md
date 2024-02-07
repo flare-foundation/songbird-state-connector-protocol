@@ -61,7 +61,6 @@ If the response is valid and satisfies the requested criteria (address, amount a
 ## Implementing the smart contract
 
 The smart contract that uses the State Connector protocol has to specify which attestation types it supports and what data (attestation proofs) a user has to provide in order to use the services of the smart contract.
-The smart contract can use the [verification contract](/specs/attestations/verification-contract.md) for the supported attestation types that can be generated using the [Flare Connector Utils tool](/specs/attestations/cli.md#verification-contracts).
 
 Back: [State Connector contract](/specs/scProtocol/state-connector-contract.md) |
 Next: [Attestation provider](/specs/scProtocol/attestation-provider.md) |

@@ -3,7 +3,7 @@
 ## Description
 
 A detection of a transaction that either decreases the balance for some address or is signed by the source address.
-Such an attestation could prove a violation of an agreement and therefore provides grounds to liquidate some funds locked by a smart contract on Flare.
+Such an attestation could prove a violation of an agreement and therefore provides grounds to liquidate some funds locked by a smart contract on Songbird.
 A transaction is considered “balance decreasing” for the address, if the balance after the transaction is lower than before or the address is among the signers of the transaction (even if its balance is greater than before the transaction).
 
 **Supported sources:** BTC, DOGE, XRP, testBTC, testDOGE, testXRP
@@ -35,20 +35,20 @@ The fields can be computed with the help of a [balance decreasing summary](/spec
 
 ### UTXO (Bitcoin and Dogecoin)
 
-- `sourceAddressIndicator` is the the index of the transaction input in hex padded to a 0x prefixed 32-byte string.
-  If the indicated input does not exist or the indicated input does not have the address, the attestation request is rejected.
-  The `sourceAddress` is the address of the indicated transaction input.
-- `spentAmount` is the sum of values of all inputs with sourceAddress minus the sum of all outputs with `sourceAddress`.
-  Can be negative.
-- `blockTimestamp` is the mediantime of a block.
+-   `sourceAddressIndicator` is the the index of the transaction input in hex padded to a 0x prefixed 32-byte string.
+    If the indicated input does not exist or the indicated input does not have the address, the attestation request is rejected.
+    The `sourceAddress` is the address of the indicated transaction input.
+-   `spentAmount` is the sum of values of all inputs with sourceAddress minus the sum of all outputs with `sourceAddress`.
+    Can be negative.
+-   `blockTimestamp` is the mediantime of a block.
 
 ### XRPL
 
-- `sourceAddressIndicator` is the [standard address hash](/specs/attestations/external-chains/standardAddress.md#standard-address-hash) of the address whose balance has been decreased.
-  If the address indicated by `sourceAddressIndicator` is not among the signers of the transaction and the balance of the address was not lowered in the transaction, the attestation request is rejected.
-- `spentAmount` is the difference between the balance of the indicated address after and before the transaction.
-  Can be negative.
-- `blockTimestamp` is the close_time of a ledger converted to unix time.
+-   `sourceAddressIndicator` is the [standard address hash](/specs/attestations/external-chains/standardAddress.md#standard-address-hash) of the address whose balance has been decreased.
+    If the address indicated by `sourceAddressIndicator` is not among the signers of the transaction and the balance of the address was not lowered in the transaction, the attestation request is rejected.
+-   `spentAmount` is the difference between the balance of the indicated address after and before the transaction.
+    Can be negative.
+-   `blockTimestamp` is the close_time of a ledger converted to unix time.
 
 ## Lowest Used Timestamp
 
