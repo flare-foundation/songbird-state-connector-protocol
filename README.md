@@ -82,7 +82,6 @@ For a more detailed workflow, see [here](/specs/scProtocol/verification-workflow
 
     -   [Global configurations](/specs/attestations/configs.md)
     -   [Attestation type definition](/specs/attestations/attestation-type-definition.md)
-        -   [Adding new attestation type](/specs/attestations/adding-new-attestation-type.md)
         -   [Encoding and decoding](/specs/attestations/encoding-decoding.md)
         -   [Hash, MIC](/specs/attestations/hash-MIC.md)
         -   [Verifier server](/specs/attestations/verifier.md)
