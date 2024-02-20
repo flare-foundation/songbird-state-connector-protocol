@@ -22,5 +22,4 @@ The public key hash is 20 bytes long.
 
 Back: [External chains](/specs/attestations/external-chains.md) |
 [DOGE address validity](/specs/attestations/external-chains/address-validity/DOGE.md) |
-Next: [ETH address validity](/specs/attestations/external-chains/address-validity/ETH.md)|
 [Home](/README.md)

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "BTC",
+        "description": "Bitcoin mainnet"
+    },
+    {
+        "name": "testBTC",
+        "description": "Bitcon testnet"
+    },
+    {
+        "name": "DOGE",
+        "description": "Dogecoin mainnet"
+    },
+    {
+        "name": "testDOGE",
+        "description": "Dogecoin testnet"
+    },
+    {
+        "name": "XRP",
+        "description": "XRPL mainnet"
+    },
+    {
+        "name": "testXRP",
+        "description": "XRPL testnet"
+    },
+    {
+        "name": "ETH",
+        "description": "Ethereum mainnet"
+    },
+    {
+        "name": "testETH",
+        "description": "Sepolia testnet"
+    },
+    {
+        "name": "FLR",
+        "description": "Flare mainnet"
+    },
+    {
+        "name": "testFLR",
+        "description": "Coston 2 testnet"
+    },
+    {
+        "name": "SGB",
+        "description": "Songbird mainnet"
+    },
+    {
+        "name": "testSGB",
+        "description": "Coston testnet"
+    }
+]
