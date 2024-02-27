@@ -53,6 +53,10 @@ If everything matches, the contract has a proof that the payment was correct and
 
 For a more detailed workflow, see [here](/specs/scProtocol/verification-workflow.md)
 
+## Coston
+
+State Connector is also deployed on Coston, but with different [configurations](/testnet.md).
+
 ## Additional resources
 
 -   [Attestation Client suite](https://github.com/flare-foundation/attestation-client): An implementation of the attestation client according to the specifications.
