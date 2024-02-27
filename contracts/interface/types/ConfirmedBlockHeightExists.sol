@@ -3,7 +3,7 @@ pragma solidity >=0.7.6 <0.9;
 
 /**
  * @custom:name ConfirmedBlockHeightExists
- * @custom:id 0x02
+ * @custom:id 0x03
  * @custom:supported BTC, DOGE, XRP, testBTC, testDOGE, testXRP
  * @author Flare
  * @notice An assertion that a block with `blockNumber` is confirmed.
