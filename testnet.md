@@ -5,6 +5,7 @@ State Connector on Coston is configured differently than on Songbird to facilita
 ## Supported Chains
 
 Instead of mainnet Bitcoin, Dogecoin, XRPL, Ethereum and Flare, testnets are supported on Coston.
+This is also reflected in the `sourceID`s.
 
 | `sourceID` | `chain`          |
 | ---------- | ---------------- |
@@ -14,7 +15,7 @@ Instead of mainnet Bitcoin, Dogecoin, XRPL, Ethereum and Flare, testnets are sup
 | testETH    | Sepolina         |
 | testFLR    | Coton2           |
 
-## Number of Confirmations
+### Number of Confirmations
 
 Some attestation types use a fixed number of confirmations at which a block is considered to be confirmed.
 On Coston the numbers are reduced to lower the waiting time
@@ -24,3 +25,7 @@ On Coston the numbers are reduced to lower the waiting time
 | testBTC    | 6                       |
 | testDOGE   | 6                       |
 | testXRP    | 1                       |
+
+### Addresses
+
+On Bitcoin testnet and Dogecoin testnet, the addresses follow a different set of rules.
