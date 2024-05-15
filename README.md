@@ -57,37 +57,37 @@ For a more detailed workflow, see [here](/specs/scProtocol/verification-workflow
 
 State Connector is also deployed on Coston, but with different [configurations](/testnet.md).
 
-## Additional resources
+## Additional resources and implementation
 
--   [Attestation Client suite](https://github.com/flare-foundation/attestation-client): An implementation of the attestation client according to the specifications.
--   [Multi-Chain-Client](https://github.com/flare-foundation/multi-chain-client): Helper library for data acquisition from the supported chains.
--   [Verifier server template](https://gitlab.com/flarenetwork/verifier-server-template)
+- [Attestation Client suite](https://github.com/flare-foundation/attestation-client): An implementation of the attestation client according to the specifications.
+- [Multi-Chain-Client](https://github.com/flare-foundation/multi-chain-client): Helper library for data acquisition from the supported chains.
+- [EVM verifier](https://github.com/flare-foundation/evm-verifier): An split out implementation of EVM verifier server that serves as an implementation of [EVM Transaction](/specs/attestations/active-types/EVMTransaction.md) verification process
 
 ## Index
 
--   [FAQ](/specs/scProtocol/FAQ.md)
--   State Connector Protocol
+- [FAQ](/specs/scProtocol/FAQ.md)
+- State Connector Protocol
 
-    -   [State Connector contract](/specs/scProtocol/state-connector-contract.md)
-    -   [Verification workflow](/specs/scProtocol/verification-workflow.md)
-    -   [Attestation providers](/specs/scProtocol/attestation-provider.md)
-    -   [Voting protocol](/specs/scProtocol/voting-protocol.md)
-        -   [Bit voting](/specs/scProtocol/bit-voting.md)
-        -   [Merkle tree](/specs/scProtocol/merkle-tree.md)
-        -   [Branching protocol](/specs/scProtocol/branching-protocol.md)
+  - [State Connector contract](/specs/scProtocol/state-connector-contract.md)
+  - [Verification workflow](/specs/scProtocol/verification-workflow.md)
+  - [Attestation providers](/specs/scProtocol/attestation-provider.md)
+  - [Voting protocol](/specs/scProtocol/voting-protocol.md)
+    - [Bit voting](/specs/scProtocol/bit-voting.md)
+    - [Merkle tree](/specs/scProtocol/merkle-tree.md)
+    - [Branching protocol](/specs/scProtocol/branching-protocol.md)
 
--   [Attestations](/specs/attestations/attestation.md)
+- [Attestations](/specs/attestations/attestation.md)
 
-    -   [External chains](/specs/attestations/external-chains.md)
+  - [External chains](/specs/attestations/external-chains.md)
 
-        -   [Standard transaction](/specs/attestations/external-chains/transactions.md)
-        -   [Standard payment reference](/specs/attestations/external-chains/standardPaymentReference.md)
-        -   [Standard address](/specs/attestations/external-chains/standardAddress.md)
+    - [Standard transaction](/specs/attestations/external-chains/transactions.md)
+    - [Standard payment reference](/specs/attestations/external-chains/standardPaymentReference.md)
+    - [Standard address](/specs/attestations/external-chains/standardAddress.md)
 
-    -   [Global configurations](/specs/attestations/configs.md)
-    -   [Attestation type definition](/specs/attestations/attestation-type-definition.md)
-        -   [Encoding and decoding](/specs/attestations/encoding-decoding.md)
-        -   [Hash, MIC](/specs/attestations/hash-MIC.md)
-        -   [Verifier server](/specs/attestations/verifier.md)
-        -   [Verification contract](/specs/attestations/verification-contract.md)
-        -   [Currently supported types](/specs/attestations/active-types.md)
+  - [Global configurations](/specs/attestations/configs.md)
+  - [Attestation type definition](/specs/attestations/attestation-type-definition.md)
+    - [Encoding and decoding](/specs/attestations/encoding-decoding.md)
+    - [Hash, MIC](/specs/attestations/hash-MIC.md)
+    - [Verifier server](/specs/attestations/verifier.md)
+    - [Verification contract](/specs/attestations/verification-contract.md)
+    - [Currently supported types](/specs/attestations/active-types.md)
